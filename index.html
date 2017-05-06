@@ -1,53 +1,315 @@
 <!DOCTYPE html>
-  <!DOCTYPE html>
-  <html>
-    <head>
-    	<title>norita.online</title>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <link rel="stylesheet" type="text/css" href="assets/style/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+    <title>norita.online | home</title>
 
-	<!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
 
+    <!-- Custom Fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-    <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="assets/style/css/materialize.min.css"  media="screen,projection"/>
+</head>
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
-   
-  <body id="grad1">
-    
+<!--Nav--> 
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$("#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick=$("#menu-close").click();>About</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+            </li>
+        </ul>
+    </nav>
 
-  <!--main container holds name + strengths and connect icons -->   
-	<div class="col s12">
-    <div id="main-container" class="container">
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>norita</h1>
+            <h5>Designer |  Aspiring Developer  |  Doodler</h5>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Learn More</a>
+        </div>
+    </header>
 
-        <section class="main-section">
-          <h1>norita</h1>
-          <p>aspiring developer  |  ui/ux</p>
-        </section>
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Hey, I'm Nora!</h2>
+                    <br>
+                    <p class="lead">I enrolled in UT Austin's Coding Bootcamp because I wanted to learn software development, and combine my graphic design skills with programming to create useful tools that enhance people's lives. Here you'll find a few examples of projects that showcase some of the skills and technologies I have learned over the past 24 weeks. These include:
+                    <br>
+                    <br>
+                    HTML, CSS, JavaScript, jQuery, Node.js, Express, Bootstrap, Materialize, Firebase, MySQL, API/JSON, RESTful API, Ajax, State Management, Active Record, Command Line
+                    <br>
+                    <br>
+                    I enjoy the creative process and look forward to continue cultivating my technical skills to build software that improves the user experience. 
+                    </p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
 
-        <section class="contact-info">
-          <div id ="connect">
+ <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Strengths</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-3x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-eye fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Visual Communication</strong>
+                                </h4>
+                                <p>Understand typography, color theory and the organization of information all play important roles in delivering effective messages.</p>
+                                <!--<a href="#" class="btn btn-light">Learn More</a> -->
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-3x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-search fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Root/Cause Analysis</strong>
+                                </h4>
+                                <p>Strong investigative skills. Able to thoroughly investigate available data to draw conclusions on how a process may be improved. </p>
+                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-3x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-commenting-o fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Listening</strong>
+                                </h4>
+                                <p>Able to receive constructive criticism, whether it be in my work or in a process or procedure that negatively impacts a user.</p>
+                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
 
-            <!-- contact icons -->
-            <img src="assets/images/contact-phone.png" alt="phone" class ="social">
-            <img src="assets/images/linkedin.png" alt="linkedin" class="social">
-            <img src="assets/images/github.png" alt="github" class="social">
-          </div>
-    		</section>
-  	<!--end container-->
-    </div>
-  </div>
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-    </body>
-  </html>
+    <!-- Callout -->
+    <aside class="callout">
+        <div class="text-vertical-center">
+            <h1 id="projectTitle">art + technology</h1>
+        </div>
+    </aside>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Projects</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="https://peaceful-dawn-68032.herokuapp.com/" target="_blank">
+                                    <img class="img-portfolio img-responsive" src="img/hangman.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/beerTrivia.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/sqlBurger.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="https://intense-fjord-15635.herokuapp.com/" target="_blank">
+                                    <img class="img-portfolio img-responsive" src="img/whereTo.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                    <a href="portfolio.html" class="btn btn-dark" target="_blank">Project Descriptions</a>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Contact Photo -->
+    <section id="contact" class="col-lg-12">
+        <div class="austin">
+            <small>
+            <a></a>
+        </small>
+        </div>
+    </section>
+
+
+<!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Nora Mata</strong>
+                    </h4>
+                    <p>Austin, TX</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-envelope fa-fw"></i> <a href="mailto:nora.y.mata@gmail.com">nora.y.mata@gmail.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.linkedin.com/in/nora-mata/" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/norita-m" target="_blank"><i class="fa fa-github-alt fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; norita 2017</p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    // Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+    // var onMapMouseleaveHandler = function(event) {
+    //     var that = $(this);
+    //     that.on('click', onMapClickHandler);
+    //     that.off('mouseleave', onMapMouseleaveHandler);
+    //     that.find('iframe').css("pointer-events", "none");
+    // }
+    // var onMapClickHandler = function(event) {
+    //         var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            // that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            // that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            // that.on('mouseleave', onMapMouseleaveHandler);
+        // }
+        // Enable map zooming with mouse scroll when the user clicks the map
+    // $('.map').on('click', onMapClickHandler);
+    </script>
+
+</body>
+
+</html>
+
+
